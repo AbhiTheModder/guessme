@@ -3,6 +3,10 @@
     background-color: black;
 }
 
+.main {
+	background-color: grey;
+}
+
 /* hero background image */
 .bgimage {
     height:100vh;
