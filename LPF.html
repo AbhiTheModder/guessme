@@ -1,0 +1,113 @@
+<h2 style="text-align: left;">&nbsp;<span style="font-family: times;">How <span style="color: #fcff01;">Lucky
+            Patcher</span> works on <u><span style="color: #cfe2f3;">some</span></u> flutter apps.</span></h2>
+<h4 style="text-align: left;"><span style="font-family: trebuchet;">Some of you have either in the past or present
+        surely have thought about how lucky patcher is able to manipulate aps written in dart (i.e., basically a form of
+        C like programming language) which packages the Dart code&nbsp;inside lib during generating output for android
+        releases...</span></h4>
+<h4 style="text-align: left;">The Answer:</h4>
+<div>Answer to this question is pretty simple if you look into the&nbsp;<a
+        href="https://pub.dev/packages/in_app_purchase" rel="nofollow"
+        target="_blank">FlutterInappPurchase.</a>&nbsp;packages of flutter.</div>
+<div><br /></div>
+<div><span style="font-size: medium;"><b>Pros:</b></span></div>
+<div>&nbsp;It has features of providing billing Api to flutter apps and without google play Api binding i.e., you don't
+    need to use traditional way of adding play billing-api, services-api inside your <i>build.gradle</i>
+    anymore...Instead of that just use this flutter package and you're good to go.</div>
+<div>
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container"
+        style="margin-left: auto; margin-right: auto;">
+        <tbody>
+            <tr>
+                <td style="text-align: center;"><a
+                        href="https://blogger.googleusercontent.com/img/a/AVvXsEifXPUM7f0J1syHaK5CCt5yGjTAlOqor9iXJr-LEeipG-wE7_lEelvgmkj0UeGTkF5iRddwfss6WXgN2ySErdezpvqZrod2gg3ym0AzOAJyzsqQWaTv_qnkbifWUN0BaM8IzXU6oU7C80mDVaeHHAJZLUyaokFTuu_qbF0BtvKw0ZMOUoBms3aaDIr_q-g"
+                        style="margin-left: auto; margin-right: auto;"><img alt="" data-original-height="663"
+                            data-original-width="750" height="418"
+                            src="https://blogger.googleusercontent.com/img/a/AVvXsEifXPUM7f0J1syHaK5CCt5yGjTAlOqor9iXJr-LEeipG-wE7_lEelvgmkj0UeGTkF5iRddwfss6WXgN2ySErdezpvqZrod2gg3ym0AzOAJyzsqQWaTv_qnkbifWUN0BaM8IzXU6oU7C80mDVaeHHAJZLUyaokFTuu_qbF0BtvKw0ZMOUoBms3aaDIr_q-g=w640-h418"
+                            width="640" /></a></td>
+            </tr>
+            <tr>
+                <td class="tr-caption" style="text-align: center;"><span
+                        style="font-family: courier; font-size: xx-small;">Source:</span><span
+                        style="font-size: xx-small;">&nbsp;<a href="https://pub.dev/packages/in_app_purchase"
+                            rel="nofollow" target="_blank">in_app_purchase</a></span></td>
+            </tr>
+        </tbody>
+    </table><br /><br />
+</div>
+<div><br /></div>
+<div><span style="font-size: medium;"><b>Cons:</b></span></div>
+<div><span style="font-size: medium;">The feature of this package that allows you to implement purchases through any
+        store app you want to inside your build.</span></div>
+<div>
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container"
+        style="margin-left: auto; margin-right: auto;">
+        <tbody>
+            <tr>
+                <td style="text-align: center;"><a
+                        href="https://blogger.googleusercontent.com/img/a/AVvXsEijOh9HXMVS0d7byRk_DAf7nNtbH9J8j_sGT04HhzgnTRILb_0G9NbYjEnFIHkJ2yoU1Z8tFfkH1MSdgf24PFHDKvDrekzcjuwfViZe4wItyekQ8HNNGbEtkVtid43iZCUEMck7Htaf-GTclzHmfrE1nQNvwwd5Z3aubYj7zbkNFf7t2A9e6SqKu519fec"
+                        style="margin-left: auto; margin-right: auto;"><img alt="" data-original-height="272"
+                            data-original-width="754" height="164"
+                            src="https://blogger.googleusercontent.com/img/a/AVvXsEijOh9HXMVS0d7byRk_DAf7nNtbH9J8j_sGT04HhzgnTRILb_0G9NbYjEnFIHkJ2yoU1Z8tFfkH1MSdgf24PFHDKvDrekzcjuwfViZe4wItyekQ8HNNGbEtkVtid43iZCUEMck7Htaf-GTclzHmfrE1nQNvwwd5Z3aubYj7zbkNFf7t2A9e6SqKu519fec=w640-h164"
+                            width="640" /></a></td>
+            </tr>
+            <tr>
+                <td class="tr-caption" style="text-align: center;"><span
+                        style="font-family: courier; font-size: xx-small;">Source:</span><span
+                        style="font-size: xx-small;"> <a href="https://pub.dev/packages/in_app_purchase" rel="nofollow"
+                            target="_blank">in_app_purchase</a></span></td>
+            </tr>
+        </tbody>
+    </table>If you read the highlighted line in the above picture, you'll understand that this package gives you ability
+    to <i><b>pass purchases to any store app</b></i> in your device, that means the developer can add feature for stores
+    like <b>Mi store</b>,palm store,Vivo store apps comes with devices.
+</div>
+<div><br /></div>
+<div><span style="font-size: medium;"><b>Example dump.dart from such an app:</b></span></div>
+<div>
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container"
+        style="margin-left: auto; margin-right: auto;">
+        <tbody>
+            <tr>
+                <td style="text-align: center;"><a
+                        href="https://blogger.googleusercontent.com/img/a/AVvXsEhwRcUplhe2CUloKD6_E8Kl3rDdNT9asWPWdbHbBZZFr0unHhhTBu6tDGw_cz3AGMhJ-tm1cfzdLAR5jtMXPNrsyfXh25VaHvsrRJGi21LT5AItSzKT6Ew64PmIgoGL-oG2cs_dZY7lH6kS1YDZPl5pM8brPfmIClSP4nAp9u72wzQYFaL_jJDRRM5UlbY"
+                        style="margin-left: auto; margin-right: auto;"><img alt="" data-original-height="593"
+                            data-original-width="1036" height="288"
+                            src="https://blogger.googleusercontent.com/img/a/AVvXsEhwRcUplhe2CUloKD6_E8Kl3rDdNT9asWPWdbHbBZZFr0unHhhTBu6tDGw_cz3AGMhJ-tm1cfzdLAR5jtMXPNrsyfXh25VaHvsrRJGi21LT5AItSzKT6Ew64PmIgoGL-oG2cs_dZY7lH6kS1YDZPl5pM8brPfmIClSP4nAp9u72wzQYFaL_jJDRRM5UlbY=w482-h288"
+                            width="482" /></a></td>
+            </tr>
+            <tr>
+                <td class="tr-caption" style="text-align: center;"><span style="font-size: xx-small;">dumped using
+                        reFlutter</span></td>
+            </tr>
+        </tbody>
+    </table><span style="font-size: medium;"><b><br /></b></span>
+</div>
+<div><br /></div>
+<div>This is where we get <b>answer</b> to our main question "<i>How LP works on these apps?</i>":</div>
+<div>As we get to know this package applied feature through which user can get purchasing from any store app present in
+    your device.... and we also know what LP does is doing same applying it's patches inside app and showing it that it
+    is systems store app and LP bypasses it as this package also in the same way stores the data received from store app
+    and saves your purchases... LoL 🤣</div>
+<div>
+    <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container"
+        style="margin-left: auto; margin-right: auto;">
+        <tbody>
+            <tr>
+                <td style="text-align: center;"><a
+                        href="https://blogger.googleusercontent.com/img/a/AVvXsEjFLsC7WYZuk8AZ3ICyBs_JQXu2jHzuRm-A9ISZMTxtl4xBoMUCDdHaQsP8c9YMUDtp9PzXsUihHyPptRzBXNM8lTg1F-kZjRJuP5Z8gPBhPLiq5GWo5aFkdSRA6mTpXR99eSeBdXDyfw23HYArbD9q_4otLFyC4aM_eh6c5N-cfT3uqYj_AonXutY8m_I"
+                        style="margin-left: auto; margin-right: auto;"><img alt="" data-original-height="264"
+                            data-original-width="789" height="214"
+                            src="https://blogger.googleusercontent.com/img/a/AVvXsEjFLsC7WYZuk8AZ3ICyBs_JQXu2jHzuRm-A9ISZMTxtl4xBoMUCDdHaQsP8c9YMUDtp9PzXsUihHyPptRzBXNM8lTg1F-kZjRJuP5Z8gPBhPLiq5GWo5aFkdSRA6mTpXR99eSeBdXDyfw23HYArbD9q_4otLFyC4aM_eh6c5N-cfT3uqYj_AonXutY8m_I=w640-h214"
+                            width="640" /></a></td>
+            </tr>
+            <tr>
+                <td class="tr-caption" style="text-align: center;"><span
+                        style="font-family: courier; font-size: xx-small;">Source:</span><span
+                        style="font-size: xx-small;">&nbsp;<a href="https://pub.dev/packages/in_app_purchase"
+                            rel="nofollow" target="_blank">in_app_purchase</a></span></td>
+            </tr>
+        </tbody>
+    </table><br />The above image clarify that it <i>validates your purchase through store app</i> and then saves and
+    you're done 😂<br /><br />
+</div>
+<div><br /></div>
